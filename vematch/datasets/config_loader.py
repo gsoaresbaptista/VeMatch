@@ -1,5 +1,7 @@
-import yaml
 import os
+
+import yaml
+
 
 def load_dataset_config():
     config_path = os.path.join(os.path.dirname(__file__), "datasets.yaml")

@@ -1,10 +1,10 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="VeMatch",
     version="0.0.1",
     packages=find_packages(),
-    package_data={"VeMatch": ["datasets/datasets.yaml"]},
+    package_data={"vematch": ["datasets/datasets.yaml"]},
     install_requires=["requests", "PyYAML", "tqdm", "torch"],
     python_requires=">=3.10",
     description="A comprehensive toolkit for managing datasets and implementing advanced techniques for similar image identification.",
