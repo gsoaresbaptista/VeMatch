@@ -55,6 +55,8 @@ html_logo = "_static/logo/purple.svg"
 html_favicon = "https://raw.githubusercontent.com/gsoaresbaptista/VeMatch/main/docs/_static/logo/purple.svg"
 html_theme_options = {
     "accent_color": "iris",
+    "light_logo": "_static/logo/black.svg",
+    "dark_logo": "_static/logo/white.svg",
     "dark_code": True,
     "nav_links": [
         {"title": "VeMatch", "url": "https://gsoaresbaptista.github.io/VeMatch/"},
