@@ -5,7 +5,9 @@ import requests
 from tqdm import tqdm
 
 
-def download_dataset(dataset_name, download_url, dir_path="~/.VeMatch"):
+def download_dataset(
+    dataset_name: str, download_url: str, dir_path: str = "~/.VeMatch"
+) -> str:
     """Downloads and extracts a dataset from a given URL.
 
     This function downloads a dataset from the provided URL, extracts it to a specified path,
@@ -21,7 +23,8 @@ def download_dataset(dataset_name, download_url, dir_path="~/.VeMatch"):
         str: The path to the directory where the dataset was extracted.
 
     """
-    os.makedirs(os.path.expanduser(dir_path), exist_ok=True)
+    dir_path = os.path.expanduser(dir_path)
+    os.makedirs(dir_path, exist_ok=True)
     dataset_path = os.path.join(dir_path, dataset_name)
 
     if os.path.exists(dataset_path):

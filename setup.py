@@ -5,7 +5,7 @@ setup(
     version="0.0.1",
     packages=find_packages(),
     package_data={"vematch": ["datasets/datasets.yaml"]},
-    install_requires=["requests", "PyYAML", "tqdm", "torch"],
+    install_requires=["requests", "PyYAML", "tqdm", "torch", "torchvision", "numpy"],
     python_requires=">=3.10",
     description="A comprehensive toolkit for managing datasets and implementing advanced techniques for similar image identification.",
     long_description=open("README.md").read(),

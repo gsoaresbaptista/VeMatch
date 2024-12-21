@@ -18,12 +18,8 @@ author = "Gabriel Soares Baptista"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-html_baseurl = 'https://gsoaresbaptista.github.io/VeMatch/'
-extensions = [
-    "sphinx.ext.autodoc",
-    "sphinx.ext.napoleon",
-    "sphinx.ext.githubpages"
-]
+html_baseurl = "https://gsoaresbaptista.github.io/VeMatch/"
+extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx.ext.githubpages"]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -56,9 +52,6 @@ html_theme_options = {
     "accent_color": "iris",
     "dark_code": True,
     "nav_links": [
-        {
-            "title": "VeMatch",
-            "url": "https://gsoaresbaptista.github.io/VeMatch/"
-        },
-    ]
+        {"title": "VeMatch", "url": "https://gsoaresbaptista.github.io/VeMatch/"},
+    ],
 }
