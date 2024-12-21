@@ -2,7 +2,7 @@
 <html lang="en" data-accent-color="iris" data-content_root="./">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Installation - VeMatch documentation</title><link rel="shortcut icon" href="https://raw.githubusercontent.com/gsoaresbaptista/VeMatch/main/docs/_static/logo/purple.svg"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Datasets" href="source/modules.html" /><link rel="prev" title="VeMatch" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Installation - VeMatch documentation</title><link rel="shortcut icon" href="https://raw.githubusercontent.com/gsoaresbaptista/VeMatch/main/docs/_static/logo/purple.svg"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Datasets" href="source/datasets/index.html" /><link rel="prev" title="VeMatch" href="index.html" />
       <link rel="canonical" href="https://gsoaresbaptista.github.io/VeMatch/install.html" /><script>
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
@@ -68,10 +68,9 @@ data-aria-dark="Switch to auto color mode">
 </ul>
 <p class="caption" role="heading" aria-level="3"><span class="caption-text">Development</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="source/modules.html">Datasets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="source/datasets/config_loader.html">Config Loader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/datasets/downloader.html">Downloader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/datasets/torch_datasets.html">Torch Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/datasets/index.html">Datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="source/datasets/inbuilt/index.html">In-Built Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source/datasets/inbuilt/label_extraction.html">Label Extraction</a></li>
 </ul>
 </li>
 </ul>
@@ -121,6 +120,10 @@ data-aria-dark="Switch to auto color mode">
 <h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h1>
 <p class="lead">Install the <strong>VeMatch</strong> as a Python package.</p>
 <hr class="docutils" />
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This page is still under construction. (WIP)</p>
+</div>
 <p>VeMatch is a Python library designed to implement state-of-the-art techniques for image similarity identification.
 It is ideal for researchers and developers working on re-identification (ReID) and embedding analysis tasks.
 VeMatch provides practical and customizable tools for manipulating datasets and similarity algorithms.</p>
@@ -131,15 +134,6 @@ installed using pip.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span data-line="1">pip<span class="w"> </span>install<span class="w"> </span>VeMatch
 </span></pre></div>
 </div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>If you’re new to ReID, we recommend reading the following papers:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://openaccess.thecvf.com/content_cvpr_2017/papers/Bak_One-Shot_Metric_Learning_CVPR_2017_paper.pdf">One-Shot Metric Learning for Person Re-Identification</a></p></li>
-<li><p><a class="reference external" href="https://arxiv.org/abs/2001.04193">Deep Learning for Person Re-identification: A Survey and Outlook</a></p></li>
-</ul>
-<p>These papers provide foundational knowledge and a comprehensive overview of the challenges and applications in ReID.</p>
-</div>
 </section>
 <section id="import-vemath">
 <h2>Import VeMath<a class="headerlink" href="#import-vemath" title="Link to this heading">¶</a></h2>
@@ -147,7 +141,6 @@ installed using pip.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span data-line="1">import<span class="w"> </span>vematch
 </span></pre></div>
 </div>
-<p>TO-DO</p>
 </section>
 </section>
 
@@ -163,7 +156,7 @@ installed using pip.</p>
         <span>Previous</span><div class="title">Home</div></div>
     </a>
   </div><div class="navigation-next">
-    <a href="source/modules.html">
+    <a href="source/datasets/index.html">
       <div class="page-info">
         <span>Next</span>
         <div class="title">Datasets</div>
