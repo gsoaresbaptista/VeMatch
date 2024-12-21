@@ -7,7 +7,7 @@
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=397bb51e" />
-    <link rel="stylesheet" type="text/css" href="_static/shibuya.css?v=f909f229" />
+    <link rel="stylesheet" type="text/css" href="_static/shibuya.css?v=10d1008b" />
     <link media="print" rel="stylesheet" type="text/css" href="_static/print.css?v=20ff2c19" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,12 +60,22 @@ data-aria-dark="Switch to auto color mode">
 
 <div class="genindex-jumpbox">
  <a href="#D"><strong>D</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
+ | <a href="#T"><strong>T</strong></a>
  
 </div>
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    datasets.config_loader
+
+      <ul>
+        <li><a href="source/datasets/config_loader.html#module-datasets.config_loader">module</a>
+</li>
+      </ul></li>
       <li>
     datasets.downloader
 
@@ -75,7 +85,40 @@ data-aria-dark="Switch to auto color mode">
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    datasets.torch_datasets
+
+      <ul>
+        <li><a href="source/datasets/torch_datasets.html#module-datasets.torch_datasets">module</a>
+</li>
+      </ul></li>
       <li><a href="source/datasets/downloader.html#datasets.downloader.download_dataset">download_dataset() (in module datasets.downloader)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="source/datasets/torch_datasets.html#datasets.torch_datasets.ImageDataset">ImageDataset (class in datasets.torch_datasets)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="source/datasets/torch_datasets.html#datasets.torch_datasets.ImageDataset.images">images (datasets.torch_datasets.ImageDataset attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="source/datasets/torch_datasets.html#datasets.torch_datasets.ImageDataset.labels">labels (datasets.torch_datasets.ImageDataset attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="source/datasets/torch_datasets.html#datasets.torch_datasets.load_data">load_data() (in module datasets.torch_datasets)</a>
+</li>
+      <li><a href="source/datasets/config_loader.html#datasets.config_loader.load_dataset_config">load_dataset_config() (in module datasets.config_loader)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -87,9 +130,21 @@ data-aria-dark="Switch to auto color mode">
     module
 
       <ul>
+        <li><a href="source/datasets/config_loader.html#module-datasets.config_loader">datasets.config_loader</a>
+</li>
         <li><a href="source/datasets/downloader.html#module-datasets.downloader">datasets.downloader</a>
 </li>
+        <li><a href="source/datasets/torch_datasets.html#module-datasets.torch_datasets">datasets.torch_datasets</a>
+</li>
       </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="source/datasets/torch_datasets.html#datasets.torch_datasets.ImageDataset.transform">transform (datasets.torch_datasets.ImageDataset attribute)</a>
+</li>
   </ul></td>
 </tr></table>
 

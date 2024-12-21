@@ -18,7 +18,7 @@ clean-dist:
 page:
 	$(MAKE) clean-dist
 	$(MAKE) html
-	mv ./$(BUILDDIR)/html/* ./$(BUILDDIR)/html/.* ../
+	mv ./$(BUILDDIR)/html/* ./$(BUILDDIR)/html/.[!.]* ../
 	rm -rf $(BUILDDIR)
 
 .PHONY: help Makefile
