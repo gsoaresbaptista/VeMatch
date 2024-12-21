@@ -45,32 +45,65 @@ class ImageDataset(torch.utils.data.Dataset):
         return image, label
 
 
-def load_data(dataset_name: str, dir_path: str = "~/.VeMatch"):
+def load_data(dataset_name: str, dir_path: str = "~/.VeMatch",custom_config: dict[str, Any] = None,):
     """Loads and prepares the dataset for training, gallery, and query usage.
 
-    This function retrieves dataset configurations, downloads and extracts the dataset,
-    and creates dataset objects for training, gallery, and query partitions.
+    This function retrieves dataset configurations, checks if the dataset is already present locally,
+    downloads and extracts it if necessary, or allows users to directly provide a path to pre-structured
+    local data. Creates dataset objects for training, gallery, and query partitions.
 
     Args:
-        dataset_name (str): The name of the dataset to load.
+        dataset_name (str): The name of the dataset to load. If `custom_config` is provided, 
+                            this serves as an identifier for the custom dataset path.
         dir_path (str, optional): The base directory where datasets are stored. Defaults to `~/.VeMatch`.
+        custom_config (dict[str, Any], optional): Custom dataset configuration. This parameter can include:
+
+            - `url` (str, optional): The URL to download the dataset if it's not available locally.
+            - `query` (str, optional): The name of the folder or file that contains the query images.
+            - `gallery` (str, optional): The name of the folder or file that contains the gallery images.
+            - `train` (str, optional): The name of the folder or file that contains the training images.
+            - `label-extraction` (dict, optional): Defines how to extract labels from image file names.
+
+            Refer to the :doc:`In-Built Datasets <inbuilt/index>` and :doc:`Label-Extraction <inbuilt/label_extraction>` for more information.
 
     Returns:
         tuple[ImageDataset, ImageDataset, ImageDataset]: The datasets for training, gallery, and query partitions.
-    """
-    config = config_loader.load_dataset_config()
 
-    if dataset_name not in config.keys():
-        quoted_names = [f'"{valid_name}"' for valid_name in config.keys()]
+    Raises:
+        ValueError: If `dataset_name` is invalid (when `custom_config` is not provided).
+        FileNotFoundError: If `dataset_name` is not found locally and no download URL is available for custom datasets.
+
+    References:
+        For details on dataset configurations and custom dataset support, see the :doc:`In-built Datasets <inbuilt/index>`.
+
+        For details about label extraction see :doc:`Label-Extraction <inbuilt/label_extraction>`.
+    """
+    config = custom_config or config_loader.load_dataset_config()
+
+    if dataset_name not in config.keys() and not custom_config:
         raise ValueError(
-            f"Invalid dataset name, must be one of {', '.join(quoted_names)}."
+            f"Invalid dataset name. See the \"In-built Datasets\" for valid options."
         )
 
-    config = config[dataset_name]
-    dataset_path = downloader.download_dataset(dataset_name, config["url"], dir_path)
+    dataset_config = config[dataset_name]
+    dir_path = os.path.expanduser(dir_path)
+
+    dataset_path = os.path.join(dir_path, dataset_name)
+
+    if not os.path.exists(dataset_path):
+        if custom_config and "url" not in dataset_config:
+            raise FileNotFoundError(
+                f"Dataset '{dataset_name}' not found locally and no URL is available for downloading. "
+                f"Please provide a valid local path or a download URL in the custom configuration."
+            )
+        print(f"Dataset '{dataset_name}' not found locally. Downloading...")
+        dataset_path = downloader.download_dataset(dataset_name, dataset_config["url"], dir_path)
+    else:
+        print(f"Using local dataset at '{dataset_path}'.")
+
     default_transform = ()
 
-    train, gallery, query = __get_images(dataset_path, config)
+    train, gallery, query = __get_images(dataset_path, dataset_config)
     train = ImageDataset(*train, default_transform)
     gallery = ImageDataset(*gallery, default_transform)
     query = ImageDataset(*query, default_transform)

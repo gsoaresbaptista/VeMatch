@@ -1,8 +1,8 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('../'))
-sys.path.insert(0, os.path.join(os.path.abspath('../'), 'vematch'))
+sys.path.insert(0, os.path.abspath("../"))
+sys.path.insert(0, os.path.join(os.path.abspath("../"), "vematch"))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -20,7 +20,11 @@ author = "Gabriel Soares Baptista"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 html_baseurl = "https://gsoaresbaptista.github.io/VeMatch/"
-extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx.ext.githubpages"]
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.githubpages",
+]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
