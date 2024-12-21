@@ -1,7 +1,8 @@
+import os
 import sys
-from pathlib import Path
 
-sys.path.insert(0, str(Path("..", "..", "vematch").resolve()))
+sys.path.insert(0, os.path.abspath('../'))
+sys.path.insert(0, os.path.join(os.path.abspath('../'), 'vematch'))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -47,7 +48,7 @@ napoleon_attr_annotations = True
 html_theme = "shibuya"
 html_static_path = ["_static"]
 html_logo = "_static/logo/purple.svg"
-html_favicon = "https://raw.githubusercontent.com/gsoaresbaptista/VeMatch/main/docs/sphinx/_static/logo/purple.svg"
+html_favicon = "https://raw.githubusercontent.com/gsoaresbaptista/VeMatch/main/docs/_static/logo/purple.svg"
 html_theme_options = {
     "accent_color": "iris",
     "dark_code": True,

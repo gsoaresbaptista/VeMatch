@@ -1,4 +1,4 @@
-<img src="https://github.com/gsoaresbaptista/VeMatch/raw/main/docs/sphinx/_static/logo/purple.svg" width="50px" height="80px" align="left">
+<img src="https://github.com/gsoaresbaptista/VeMatch/raw/main/docs/_static/logo/purple.svg" width="50px" height="80px" align="left">
 
 # VeMatch: Image Similarity Toolkit
 [![PyPi](https://img.shields.io/badge/pypi-%23ececec.svg?style=for-the-badge&logo=pypi&logoColor=1f73b7)](https://pypi.org/project/VeMatch/)
