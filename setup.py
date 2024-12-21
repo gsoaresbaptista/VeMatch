@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="VeMatch",
-    version="0.0.1",
+    version="0.0.2",
     packages=find_packages(),
     package_data={"vematch": ["datasets/datasets.yaml"]},
     install_requires=["requests", "PyYAML", "tqdm", "torch", "torchvision", "numpy"],
@@ -20,7 +20,7 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
         "Topic :: Scientific/Engineering :: Image Processing",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.12",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
