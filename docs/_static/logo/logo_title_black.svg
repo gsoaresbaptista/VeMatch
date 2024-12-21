@@ -1,0 +1,31 @@
+<svg viewBox="-417.31 0 1543.01 373.2647814910026" xml:space="preserve" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="max-height: 500px" width="1543.01" height="373.2647814910026">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<rect fill="transparent" height="100%" width="100%" y="0" x="0"/>
+<g id="60a2e00b-b5a0-4a86-86d6-3b43701d8650" transform="matrix(1 0 0 1 400 300)">
+<rect height="600" width="800" ry="0" rx="0" y="-300" x="-400" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;"/>
+</g>
+<g id="be5e7055-9ced-4765-885b-d000f058f085" transform="matrix(0 0 0 0 0 0)">
+</g>
+<g transform="matrix(0 0 0 0 239.52 0)">
+<g style="">
+</g>
+</g>
+<g transform="matrix(0.56 0 0 0.56 -211.98 186.32)">
+<g style="">
+		<g transform="matrix(33.33 0 0 33.33 14.64 0.04)">
+<path stroke-linecap="round" d="M 1 20.783 C 2.7152136367931816 21.503500872659572 4.56427980353496 21.850200778923657 6.423999999999997 21.8 C 11.666 21.8 13.216000000000001 20.166 18.458000000000002 20.166 C 20.317384964549447 20.1159418651778 22.16609526682735 20.462638965936904 23.881000000000007 21.183000000000003 L 20.831 3.0779999999999994 C 19.390580686475612 2.511805288549013 17.858637487856562 2.214228711472127 16.311 2.1999999999999993 C 12.463000000000001 2.1999999999999993 12.419 3.7999999999999994 8.571 3.7999999999999994 C 7.036305430902948 3.791545195691537 5.511961118632184 3.5480547989084625 4.051 3.077999999999998 z M 8.57 4.8 C 10.034235792619704 4.829395731024716 11.486459207915146 4.53040855728742 12.819999999999999 3.9250000000000016 C 13.911687686491698 3.41691748805609 15.106275033363506 3.1687582254537814 16.310000000000002 3.2 C 17.54463632946423 3.214793536390234 18.769390301850084 3.422293176339902 19.939999999999998 3.8149999999999964 L 22.615000000000002 19.686999999999998 C 21.257574897398303 19.335025816533037 19.860299198298875 19.160240306903084 18.45799999999999 19.166999999999994 C 16.346303320219533 19.172495262762787 14.244540150178462 19.45627195697406 12.206999999999992 20.011000000000003 C 10.322810881143944 20.529089274726758 8.378112053634167 20.7944130469739 6.4239999999999995 20.800000000000004 C 4.965233501902478 20.813199387377537 3.5136882553304174 20.593779757081762 2.1239999999999988 20.150000000000006 L 4.848 4.343 C 6.066782017503169 4.638959930483414 7.315821812936792 4.7923213454520255 8.570000000000007 4.8000000000000025 z M 12 15 L 7 15 L 7 14 L 12 14 L 12 5 L 13 5 L 13 8 L 18 8 L 18 9 L 13 9 L 13 18 L 12 18 z" transform="translate(-12.44, -12)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(110,86,207); fill-rule: nonzero; opacity: 1;"/>
+</g>
+		<g transform="matrix(33.33 0 0 33.33 -0.04 -0.04)">
+<path stroke-linecap="round" d="M 0 0 L 24 0 L 24 24 L 0 24 z" transform="translate(-12, -12)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"/>
+</g>
+</g>
+</g>
+<g id="13f398e0-a1b6-4eb8-bf0f-16391df0b3c3" style="" transform="matrix(0.73 0 0 0.73 483.18 132.68)">
+		<text style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;" font-weight="900" font-style="normal" font-size="200" font-family="Roboto" xml:space="preserve"><tspan y="62.83" x="-489.42">VeMATCH</tspan></text>
+</g>
+<g id="f7f566dc-fc1f-4ec7-a091-26bf58bd7849" style="" transform="matrix(0.56 0 0 0.56 653.1 268.41)">
+		<text style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;" font-weight="400" font-style="normal" font-size="178" font-family="Roboto" xml:space="preserve"><tspan y="55.92" x="-910.65">Image Similarity Toolkit</tspan></text>
+</g>
+</svg>
