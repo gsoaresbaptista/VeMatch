@@ -85,16 +85,7 @@ data-aria-dark="Switch to auto color mode">
     <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
       <i class="i-lucide close"></i>
     </button>
-    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
-<li><a class="reference internal" href="#datasets.torch_datasets.ImageDataset"><code class="docutils literal notranslate"><span class="pre">ImageDataset</span></code></a><ul>
-<li><a class="reference internal" href="#datasets.torch_datasets.ImageDataset.images"><code class="docutils literal notranslate">images</span></code></a></li>
-<li><a class="reference internal" href="#datasets.torch_datasets.ImageDataset.labels"><code class="docutils literal notranslate">labels</span></code></a></li>
-<li><a class="reference internal" href="#datasets.torch_datasets.ImageDataset.transform"><code class="docutils literal notranslate">transform</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#datasets.torch_datasets.load_data"><code class="docutils literal notranslate"><span class="pre">load_data()</span></code></a></li>
-</ul>
-</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
   </aside>
   <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
   <main class="sy-main w-full max-sm:max-w-full print:pt-6"><div class="sy-breadcrumbs" role="navigation">
@@ -126,81 +117,8 @@ data-aria-dark="Switch to auto color mode">
 </div><div class="flex flex-col break-words justify-between">
       <div class="min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
         <article class="yue dark-code" role="main">
-          <section id="module-datasets.torch_datasets">
-<span id="torch-datasets"></span><h1>Torch Datasets<a class="headerlink" href="#module-datasets.torch_datasets" title="Link to this heading">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="datasets.torch_datasets.ImageDataset">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">datasets.torch_datasets.</span></span><span class="sig-name descname"><span class="pre">ImageDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">images</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#datasets.torch_datasets.ImageDataset" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
-<p>A dataset class for handling image data with labels.</p>
-<p>This class is used to represent datasets with images and their corresponding
-labels. It supports optional image transformations.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>images</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – A list of file paths to the images.</p></li>
-<li><p><strong>labels</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – A list of labels corresponding to the images.</p></li>
-<li><p><strong>transform</strong> (<em>callable</em><em>, </em><em>optional</em>) – A function or transform to apply to the images.</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="datasets.torch_datasets.ImageDataset.images">
-<span class="sig-name descname"><span class="pre">images</span></span><a class="headerlink" href="#datasets.torch_datasets.ImageDataset.images" title="Link to this definition">¶</a></dt>
-<dd><p>The image file paths.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>list[str]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="datasets.torch_datasets.ImageDataset.labels">
-<span class="sig-name descname"><span class="pre">labels</span></span><a class="headerlink" href="#datasets.torch_datasets.ImageDataset.labels" title="Link to this definition">¶</a></dt>
-<dd><p>The corresponding labels.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>list[int]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="datasets.torch_datasets.ImageDataset.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><a class="headerlink" href="#datasets.torch_datasets.ImageDataset.transform" title="Link to this definition">¶</a></dt>
-<dd><p>The transform applied to images.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>callable, optional</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="datasets.torch_datasets.load_data">
-<span class="sig-prename descclassname"><span class="pre">datasets.torch_datasets.</span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'~/.VeMatch'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#datasets.torch_datasets.load_data" title="Link to this definition">¶</a></dt>
-<dd><p>Loads and prepares the dataset for training, gallery, and query usage.</p>
-<p>This function retrieves dataset configurations, downloads and extracts the dataset,
-and creates dataset objects for training, gallery, and query partitions.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_name</strong> (<em>str</em>) – The name of the dataset to load.</p></li>
-<li><p><strong>dir_path</strong> (<em>str</em><em>, </em><em>optional</em>) – The base directory where datasets are stored. Defaults to <cite>~/.VeMatch</cite>.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The datasets for training, gallery, and query partitions.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>tuple[<a class="reference internal" href="#datasets.torch_datasets.ImageDataset" title="datasets.torch_datasets.ImageDataset">ImageDataset</a>, <a class="reference internal" href="#datasets.torch_datasets.ImageDataset" title="datasets.torch_datasets.ImageDataset">ImageDataset</a>, <a class="reference internal" href="#datasets.torch_datasets.ImageDataset" title="datasets.torch_datasets.ImageDataset">ImageDataset</a>]</p>
-</dd>
-</dl>
-</dd></dl>
-
+          <section id="torch-datasets">
+<h1>Torch Datasets<a class="headerlink" href="#torch-datasets" title="Link to this heading">¶</a></h1>
 </section>
 
         </article><button class="back-to-top" type="button">
