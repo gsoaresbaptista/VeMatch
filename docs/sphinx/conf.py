@@ -47,7 +47,7 @@ napoleon_attr_annotations = True
 html_theme = "shibuya"
 html_static_path = ["_static"]
 html_logo = "_static/logo/purple.svg"
-html_favicon = "https://raw.githubusercontent.com/gsoaresbaptista/VeMatch/main/docs/_static/purple.svg"
+html_favicon = "https://raw.githubusercontent.com/gsoaresbaptista/VeMatch/main/docs/sphinx/_static/logo/purple.svg"
 html_theme_options = {
     "accent_color": "iris",
     "dark_code": True,

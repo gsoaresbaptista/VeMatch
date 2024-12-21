@@ -1,6 +1,0 @@
-Datasets
-=========
-
-.. toctree::
-
-   datasets/downloader
