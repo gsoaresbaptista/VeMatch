@@ -1,0 +1,37 @@
+name: 📝 Build and Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.12.3
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build setuptools wheel sphinx shibuya
+        python setup.py sdist bdist_wheel
+        pip install dist/VeMatch-*.whl
+
+    - name: Build documentation
+      run: |
+        cd docs/sphinx
+        make page
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/
